@@ -41,6 +41,6 @@ plot(cfl_pred)
 hist(cfl_pred_test)
 
 # Added legend for when sending results to people
-plot(cfl_pred, legend.args = list(text = 'CFL (kg)', side = 4, 
+plot(cfl_pred_test, legend.args = list(text = 'CFL (kg)', side = 4, 
                                     font = 2, line = 2.5, cex = 0.8))
 
