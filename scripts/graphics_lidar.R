@@ -21,15 +21,15 @@ ggboxplot(data = plots_metrics_rpas,
           xlab = "MPB Attack Class",
           ylab = "Cumulative Percentage of LiDAR Returns in 7th Layer",
           fill = "MPB_class",
-          palette = c("#00205B", "#00843D", "#99999A"),
+          palette = c("#ffeda0", "#feb24c", "#f03b20"),
           add = "jitter",
           ) + 
   theme(legend.position = 'none') + 
-  geom_text(x = 3, y= 90, label = "ANOVA Test: P < 0.05") +
   scale_x_discrete(labels=c("1" = "Low Attack (< 20%)", 
                             "2" = "Medium Attack (20 - 40%)",
                             "3" = "High Attack (> 40%)"))
 
+# geom_text(x = 3, y= 90, label = "ANOVA Test: P < 0.05") +
 ####### MLS 
 ggboxplot(data = plots_metrics_mls,
           x = "MPB_class",
@@ -37,11 +37,10 @@ ggboxplot(data = plots_metrics_mls,
           xlab = "MPB Attack Class",
           ylab = "Percent of Points Above Mean Height",
           fill = "MPB_class",
-          palette = c("#505986", "#F9ECE8", "#FD9007"),
+          palette = c("#ffeda0", "#feb24c", "#f03b20"),
           add = "jitter",
 ) + 
   theme(legend.position = 'none') + 
-  geom_text(x = 3, y= 37, label = "ANOVA Test: P < 0.05") +
   scale_x_discrete(labels=c("1" = "Low Attack (< 20%)", 
                             "2" = "Medium Attack (20 - 40%)",
                             "3" = "High Attack (> 40%)"))
@@ -55,11 +54,10 @@ fuse_box_paboveman <- ggboxplot(data = plots_metrics_fused,
           xlab = "MPB Attack Class",
           ylab = "Percent of Points Above Mean Height",
           fill = "MPB_class",
-          palette = c("#505986", "#F9ECE8", "#FD9007"),
+          palette = c("#ffeda0", "#feb24c", "#f03b20"),
           add = "jitter",
 ) + 
   theme(legend.position = 'none') + 
-  geom_text(x = 3, y= 37, label = "ANOVA Test: P < 0.05") +
   scale_x_discrete(labels=c("1" = "Low Attack (< 20%)", 
                             "2" = "Medium Attack (20 - 40%)",
                             "3" = "High Attack (> 40%)"))
@@ -70,7 +68,7 @@ fuse_box_zpcum9 <- ggboxplot(data = plots_metrics_fused,
                                 xlab = "MPB Attack Class",
                                 ylab = "Cumulative Percentage of LiDAR Returns in 9th Layer",
                                 fill = "MPB_class",
-                                palette = c("#505986", "#F9ECE8", "#FD9007"),
+                                palette = c("#ffeda0", "#feb24c", "#f03b20"),
                                 add = "jitter",
 ) + 
   theme(legend.position = 'none') + 
@@ -87,7 +85,7 @@ fuse_box_zpcum8 <- ggboxplot(data = plots_metrics_fused,
                              xlab = "MPB Attack Class",
                              ylab = "Cumulative Percentage of LiDAR Returns in 8th Layer",
                              fill = "MPB_class",
-                             palette = c("#505986", "#F9ECE8", "#FD9007"),
+                             palette = c("#ffeda0", "#feb24c", "#f03b20"),
                              add = "jitter",
 ) + 
   theme(legend.position = 'none') + 
